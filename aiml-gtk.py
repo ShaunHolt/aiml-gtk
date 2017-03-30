@@ -33,7 +33,7 @@ width = 500
 height = 500
 
 program = "AIML-Gtk"
-version = "0.1.1"
+version = "0.1.2"
 website = "https://github.com/sidus-dev/aiml-gtk"
 authors = "Andrea Pasciuta  <sidus@arbornet.org>"
 comments = _("A simple Gtk frontend for PyAIML")
@@ -341,6 +341,7 @@ class main(Gtk.Window):
             return True
 
         if type(widget) != Gtk.Entry: widget = self.entry
+        if not widget.get_text(): return True
 
         buf = self.console.get_buffer()
         itr = buf.get_end_iter()
