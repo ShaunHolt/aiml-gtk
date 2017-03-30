@@ -23,14 +23,17 @@ lang = locale.getlocale(locale.LC_MESSAGES)[0]
 language_list = ["en_US", "es_ES", "it_IT"]
 
 if lang in language_list:
-    l = gettext.translation(lang,\
+    gettext.translation(lang,\
+    localedir="po/locale", languages=language_list).install()
+else:
+    gettext.translation("en_US",\
     localedir="po/locale", languages=language_list).install()
 
 width = 500
 height = 500
 
 program = "AIML-Gtk"
-version = "0.1.0"
+version = "0.1.1"
 website = "https://github.com/sidus-dev/aiml-gtk"
 authors = "Andrea Pasciuta  <sidus@arbornet.org>"
 comments = _("A simple Gtk frontend for PyAIML")
