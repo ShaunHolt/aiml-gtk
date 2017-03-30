@@ -20,7 +20,7 @@ from gi.repository import Gtk, GdkPixbuf
 
 locale.setlocale(locale.LC_ALL, "")
 lang = locale.getlocale(locale.LC_MESSAGES)[0]
-language_list = ["es_ES", "it_IT"]
+language_list = ["en_US", "es_ES", "it_IT"]
 
 if lang in language_list:
     l = gettext.translation(lang,\
