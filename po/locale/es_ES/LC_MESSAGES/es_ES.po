@@ -1,0 +1,82 @@
+#
+# Andrea Pasciuta <sidus@arbornet.org>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-03-30 16:55+0200\n"
+"PO-Revision-Date: 2017-03-30 16:56+0200\n"
+"Last-Translator: Andrea Pasciuta <sidus@arbornet.org>\n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ../../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: aiml-gtk.py\n"
+
+#: aiml-gtk.py:37
+msgid "A simple Gtk frontend for PyAIML"
+msgstr "Una simple interfaz gráfica Gtk para PyAIML"
+
+#: aiml-gtk.py:77
+msgid "Open brain file"
+msgstr "Abrir archivo brain"
+
+#: aiml-gtk.py:98
+msgid "Open aiml file(s)"
+msgstr "Abrir archivo aiml"
+
+#: aiml-gtk.py:168
+msgid "Import .brn file ..."
+msgstr "Importar archivo .brn ..."
+
+#: aiml-gtk.py:171
+msgid "Import .aiml file(s) ..."
+msgstr "Importar archivo .aiml ..."
+
+#: aiml-gtk.py:185
+msgid "Save .brn file ..."
+msgstr "Guardar archivo .brn ..."
+
+#: aiml-gtk.py:188
+msgid "Save conversation ..."
+msgstr "Guardar la conversación ..."
+
+#: aiml-gtk.py:272
+msgid "Save brain file (.brn)"
+msgstr "Guardar archivo brain (.brn)"
+
+#: aiml-gtk.py:277
+msgid "Save chat file (.txt)"
+msgstr "Guardar archivo chat (.txt)"
+
+#: aiml-gtk.py:287
+msgid "Save failed"
+msgstr "Error al guardar"
+
+#: aiml-gtk.py:287
+msgid "Could not save"
+msgstr "No se pudo guardar"
+
+#: aiml-gtk.py:301 aiml-gtk.py:328
+msgid "has been loaded"
+msgstr "se ha cargado"
+
+#: aiml-gtk.py:306 aiml-gtk.py:333
+msgid "file could be corrupted or invalid"
+msgstr "archivo podría estar dañado o no válido"
+
+#: aiml-gtk.py:343
+msgid "Kernel have no files loaded"
+msgstr "Kernel no tiene archivos cargados"
+
+#: aiml-gtk.py:343
+msgid "Load some file(s) before to chat"
+msgstr "Cargar algunos archivos antes de chatear"
+
+#: aiml-gtk.py:352
+msgid "No match found for input"
+msgstr "No se encontró ningún resultado para la entrada"
