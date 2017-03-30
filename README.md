@@ -11,6 +11,11 @@ A simple Gtk frontend for [PyAIML](https://github.com/creatorrr/pyAIML)
 * [PyGObject](https://wiki.gnome.org/Projects/PyGObject)
 * [Python 3](https://www.python.org/)
 
+### Download (.aiml, .brn)
+
+* [AIML Repository](https://github.com/sidus-dev/aiml-repository)
+* [A.L.I.C.E. AIML Sets](http://www.alicebot.org/downloads/sets.html)
+
 ### Notes
 
 * You can import and load into PyAIML kernel one or more .aiml files at once.
