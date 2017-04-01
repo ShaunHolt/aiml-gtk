@@ -18,8 +18,8 @@ A simple Gtk frontend for [PyAIML](https://github.com/creatorrr/pyAIML)
 
 ### Notes
 
-* You can import and load into PyAIML kernel one or more .aiml files at once.
-* A brain file (.brn) can be saved if one or more .aiml files was loaded into PyAIML kernel, viceversa you will only save an empty file.
+* You can import one or more .aiml files at once.
+* A brain file (.brn) can be saved if one or more .aiml files are loaded, viceversa you will only save an empty file.
 
 ### Available Languages
 
