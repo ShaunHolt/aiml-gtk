@@ -15,7 +15,7 @@
 # along with AIML-Gtk. If not, see <http://www.gnu.org/licenses/>.
 
 import os, gi, locale, gettext, datetime, aiml
-gi.require_version('Gtk', '3.0')
+gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, GdkPixbuf
 
 locale.setlocale(locale.LC_ALL, "")
@@ -285,7 +285,7 @@ class main(Gtk.Window):
                    buf.get_end_iter(),
                    True)
     
-            try: open(filename, 'w').write(text)
+            try: open(filename, "w").write(text)
             except: dialogs().error(_("Save failed"), "{} {}".format(_("Could not save"), filename))
 
     def on_obrn_clicked(self, widget):
@@ -355,8 +355,10 @@ class main(Gtk.Window):
         widget.set_text("")
         self.console.scroll_mark_onscreen(buf.get_insert())
 
-win = main()
-win.connect("delete-event", Gtk.main_quit)
-win.show_all()
-Gtk.main()
+if __name__ == "__main__":
+
+    win = main()
+    win.connect("delete-event", Gtk.main_quit)
+    win.show_all()
+    Gtk.main()
 
