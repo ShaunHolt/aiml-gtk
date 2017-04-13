@@ -33,7 +33,7 @@ width = 500
 height = 500
 
 program = "AIML-Gtk"
-version = "0.1.2"
+version = "0.1.3"
 website = "https://github.com/sidus-dev/aiml-gtk"
 authors = "Andrea Pasciuta  <sidus@arbornet.org>"
 comments = _("A simple Gtk frontend for PyAIML")
@@ -157,9 +157,11 @@ class main(Gtk.Window):
         bar.set_show_close_button(True)
         self.set_titlebar(bar)
 
-        box = Gtk.HBox()
+        bbox = Gtk.HBox()
         entry = Gtk.Entry()
         entry.connect("activate", self.chat)
+
+        tbox = Gtk.HBox()
 
         cbtn = Gtk.ToolButton.new_from_stock(Gtk.STOCK_EXECUTE)
         cbtn.connect("clicked", self.chat)
@@ -213,8 +215,6 @@ class main(Gtk.Window):
         sbtn.connect("clicked", self.on_sbtn_clicked)
 
         bar.pack_start(lbtn)
-        bar.pack_start(obtn)
-        bar.pack_start(sbtn)
 
         sw = Gtk.ScrolledWindow()
         sw.set_hexpand(True)
@@ -230,13 +230,18 @@ class main(Gtk.Window):
 
         sw.add(console)
 
-        box.set_property("margin", 10)
-        box.pack_start(entry, True, True, 5)
-        box.pack_end(cbtn, False, False, 5)
+        tbox.set_property("margin", 10)
+        tbox.pack_start(obtn, False, False, 5)
+        tbox.pack_start(sbtn, False, False, 5)
+
+        bbox.set_property("margin", 10)
+        bbox.pack_start(entry, True, True, 5)
+        bbox.pack_end(cbtn, False, False, 5)
 
         grid = Gtk.Grid()
-        grid.attach(box, 0, 1, 1, 1)
+        grid.attach(tbox, 0, 1, 1, 1)
         grid.attach(sw, 0, 2, 1, 1)
+        grid.attach(bbox, 0, 3, 1, 1)
         grid.set_column_homogeneous(True)
 
         self.add(grid)

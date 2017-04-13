@@ -3,7 +3,7 @@ A simple Gtk frontend for [PyAIML](https://github.com/creatorrr/pyAIML)
 
 ### Screenshot
 
-![Alt text](http://arbornet.org/~sidus/images/gscreenshot_2017-03-30-194837.png "AIML-Gtk on Arch Linux")
+![Alt text](http://arbornet.org/~sidus/images/gscreenshot_2017-04-13-123443.png "AIML-Gtk on Arch Linux")
 
 ### Requirements
 
