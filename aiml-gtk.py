@@ -37,20 +37,6 @@ version = "0.1.3"
 website = "https://github.com/sidus-dev/aiml-gtk"
 authors = "Andrea Pasciuta  <sidus@arbornet.org>"
 comments = _("A simple Gtk frontend for PyAIML")
-license = """
-AIML-Gtk is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-AIML-Gtk is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with AIML-Gtk. If not, see <http://www.gnu.org/licenses/>.
-"""
 
 kern = aiml.Kernel()
 kern.setTextEncoding(None)
@@ -67,8 +53,7 @@ class dialogs(Gtk.Window):
         d.set_website_label(website)
         d.set_authors([authors])
         d.set_comments(comments)
-        d.set_license(license)
-        d.set_wrap_license(True)
+        d.set_license_type(Gtk.License.GPL_3_0)
         d.set_copyright("{} © {}".format(program, datetime.datetime.now().year))
         d.set_transient_for(window)
         d.run()

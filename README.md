@@ -1,27 +1,27 @@
 # AIML-Gtk
 A simple Gtk frontend for [PyAIML](https://github.com/creatorrr/pyAIML)
 
-### Screenshot
+## Screenshot
 
 ![Alt text](http://arbornet.org/~sidus/images/gscreenshot_2017-04-13-123443.png "AIML-Gtk on Arch Linux")
 
-### Requirements
+## Requirements
 
 * [Gtk+ 3](https://www.gtk.org/)
 * [PyGObject](https://wiki.gnome.org/Projects/PyGObject)
 * [Python 3](https://www.python.org/)
 
-### Download (.aiml, .brn)
+## Download (.aiml, .brn)
 
 * [AIML Repository](https://github.com/sidus-dev/aiml-repository)
 * [A.L.I.C.E. AIML Sets](http://www.alicebot.org/downloads/sets.html)
 
-### Notes
+## Notes
 
 * You can import one or more .aiml files at once.
 * A brain file (.brn) can be saved if one or more .aiml files are loaded, viceversa you will only save an empty file.
 
-### Available Languages
+## Available Languages
 
 Actually, supported languages are 3:
 
@@ -29,7 +29,7 @@ Actually, supported languages are 3:
 * Italian (it_IT)
 * Spanish (es_ES)
 
-### Contribution
+## Contribution
 
 You can help:
 
